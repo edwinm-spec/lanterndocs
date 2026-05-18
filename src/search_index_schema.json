@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "required": ["generated_at", "pages"],
+  "properties": {
+    "generated_at": {"type": "string"},
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["slug", "title", "summary", "headings", "source_path"],
+        "properties": {
+          "slug": {"type": "string"},
+          "title": {"type": "string"},
+          "summary": {"type": "string"},
+          "headings": {"type": "array", "items": {"type": "string"}},
+          "source_path": {"type": "string"}
+        }
+      }
+    }
+  }
+}
